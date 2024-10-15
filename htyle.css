@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    display: flex;
+    gap: 20px; /* 图片之间的间距 */
+}
+
+.image-a,
+.image-b {
+    width: 50px; /* 直接将图片宽度设为150px */
+    height: auto; /* 自动调整高度，保持图片比例 */
+    max-height: 100%; /* 限制图片高度，防止上下撑满页面 */
+    border: 2px solid #333; /* 图片边框 */
+    border-radius: 10px; /* 圆角边框 */
+    transform: rotate(180deg); /* 让图片横过来 */
+    object-fit: contain; /* 保持图片内部内容比例 */
+}
